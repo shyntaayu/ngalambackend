@@ -33,6 +33,14 @@ const ProjectsWrapper = styled.div`
   }
 `
 
+const TitleA = styled.div`
+  padding-left: 90px;
+`
+
+const TitleB = styled.div`
+  padding-left: 180px;
+`
+
 const AboutHero = styled.div`
   ${tw`flex flex-col lg:flex-row items-center mt-8`};
 `
@@ -43,6 +51,7 @@ const Avatar = styled.img`
 
 const AboutSub = styled.span`
   ${tw`text-white pt-12 lg:pt-0 lg:pl-12 text-2xl lg:text-3xl xl:text-4xl`};
+  text-align:center;
 `
 
 const AboutDesc = styled.p`
@@ -63,7 +72,13 @@ const Index = () => (
     <Parallax pages={5}>
       <Hero offset={0}>
         <BigTitle>
-          Hello, <br /> Lorem.
+          Ngalam
+          <TitleA>
+            Backend
+          </TitleA>
+          <TitleB>
+            Community
+          </TitleB>
         </BigTitle>
         <Subtitle>Express Your Feeling With Code.</Subtitle>
       </Hero>
